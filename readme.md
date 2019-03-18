@@ -13,6 +13,10 @@ And as extra addition it also supports taking away XP (with a red color),
 which can for example be used when an server admin uses an "XP punishment":
 ![alt text](https://github.com/VenomXNL/XNLRankBar/blob/master/ScreenShotExamples/TakingAwayXP.gif)
 
+<b>KNOWN 'ISSUES':</b>
+- It CURRENTLY doesn't support to color the 'globes'/level circles (except the normal color blue)
+- When ranking 'down' (taking away XP) it doesn't animate the 'level globes' (and i don't care for that either :P)
+
 <h1>
 	Script License and Usage
 </h1>
