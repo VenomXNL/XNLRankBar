@@ -13,9 +13,8 @@ And as extra addition it also supports taking away XP (with a red color),
 which can for example be used when an server admin uses an "XP punishment":
 ![alt text](https://github.com/VenomXNL/XNLRankBar/blob/master/ScreenShotExamples/TakingAwayXP.gif)
 
-================================================================
-                   Script License and Usage
-================================================================
+== Script License and Usage
+
 
 This script has been fully written from scratch by VenomXNL
 FiveM Account: https://forum.fivem.net/u/VenomXNL/
@@ -43,9 +42,7 @@ However:
  - You CAN Implement it in your own game-mode/server
  - You CAN adapt/change it (OBVIOUSLY) to your own needs for your server (just NO re-uploading without permission)
  
-=========================================================================================
- Implementations into frameworks (Like ESX, vRP, EssentialMode or whatever is out there)
-=========================================================================================
+== Implementations into frameworks (Like ESX, vRP, EssentialMode or whatever is out there)
  So we can't redistribute it into our framework without permission?
  Yes you CAN implement AND redistribute it into frameworks, altough I would HIGHLY appreciate
  it that you would send me a message (PM or so) that you are using it in your framework so
@@ -55,9 +52,7 @@ However:
  is that you DO PUT THE APPROPRIATE credits in the code at my rankbar scrip section(s)!
 
 
-=========================================================================================
- Implementations or 'moduled versions' for gamemodes
-=========================================================================================
+== Implementations or 'moduled versions' for gamemodes
  I'm I for example allowed to "just make an ESX version" as 'addon' for ESX and then
  publish it for ESX users?
  
@@ -79,9 +74,7 @@ However:
  for that framework, but ONLY ON REQUEST.
  
  
-=========================================================================================
- Q&A
-=========================================================================================
+== Q&A
  Q: Will you (VenomXNL) make 'alternate versions' to support frameworks like ESX, vRP etc?
  A: NO I WILL NOT, I Do NOT use frameworks myself (I'm developing my OWN 100% 
     custom server from scratch with my own (non-released) 'framework'. And thus I have no
