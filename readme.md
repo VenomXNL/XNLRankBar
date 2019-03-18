@@ -13,9 +13,9 @@ And as extra addition it also supports taking away XP (with a red color),
 which can for example be used when an server admin uses an "XP punishment":
 ![alt text](https://github.com/VenomXNL/XNLRankBar/blob/master/ScreenShotExamples/TakingAwayXP.gif)
 
-=======
+<h1>
 	Script License and Usage
-
+</h1>
 
 This script has been fully written from scratch by VenomXNL
 FiveM Account: https://forum.fivem.net/u/VenomXNL/
