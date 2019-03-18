@@ -14,7 +14,7 @@ which can for example be used when an server admin uses an "XP punishment":
 ![alt text](https://github.com/VenomXNL/XNLRankBar/blob/master/ScreenShotExamples/TakingAwayXP.gif)
 
 =======
-Script License and Usage
+	Script License and Usage
 
 
 This script has been fully written from scratch by VenomXNL
