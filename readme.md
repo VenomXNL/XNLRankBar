@@ -1,11 +1,21 @@
 Basic Information:
  What is it: This is a FiveM scripts which gives you the ability to use the normal
- ingame Rank/XP Bar to use in your own gamemode/server
+ ingame Rank/XP Bar to use in your own gamemode/server.
+ 
+ My scripts supports several function calls like for example
+ the first 'init' when spawning:
+ ![alt text](https://github.com/VenomXNL/XNLRankBar/blob/master/ScreenShotExamples/InitialSetupDuringSpawn.gif)
 
+Also supports rankbar animation when gaining multiple levels at once:
+![alt text](https://github.com/VenomXNL/XNLRankBar/blob/master/ScreenShotExamples/MultipleLevelsUpAnimation.gif)
 
-=====================================================================
+And as extra addition it also supports taking away XP (with a red color),
+which can for example be used when an server admin uses an "XP punishment":
+![alt text](https://github.com/VenomXNL/XNLRankBar/blob/master/ScreenShotExamples/TakingAwayXP.gif)
+
+================================================================
                    Script License and Usage
-=====================================================================
+================================================================
 
 This script has been fully written from scratch by VenomXNL
 FiveM Account: https://forum.fivem.net/u/VenomXNL/
