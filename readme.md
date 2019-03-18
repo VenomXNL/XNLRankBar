@@ -43,7 +43,9 @@ However:
  - You CAN Implement it in your own game-mode/server
  - You CAN adapt/change it (OBVIOUSLY) to your own needs for your server (just NO re-uploading without permission)
  
-== Implementations into frameworks (Like ESX, vRP, EssentialMode or whatever is out there)
+ <h1>
+	Implementations into frameworks (Like ESX, vRP, EssentialMode or whatever is out there)
+ </h1>
  So we can't redistribute it into our framework without permission?
  Yes you CAN implement AND redistribute it into frameworks, altough I would HIGHLY appreciate
  it that you would send me a message (PM or so) that you are using it in your framework so
@@ -52,8 +54,9 @@ However:
  What is MANDATORY though when implementing it in frameworks like ESX, vRP or any other,
  is that you DO PUT THE APPROPRIATE credits in the code at my rankbar scrip section(s)!
 
-
-== Implementations or 'moduled versions' for gamemodes
+<h1>
+	Implementations or 'moduled versions' for gamemodes
+ </h1>
  I'm I for example allowed to "just make an ESX version" as 'addon' for ESX and then
  publish it for ESX users?
  
@@ -74,8 +77,9 @@ However:
  ONE other developer/scripter can get permission to adapt the code to make it compatible
  for that framework, but ONLY ON REQUEST.
  
- 
-== Q&A
+ <h1>
+	Q&A
+</h1>
  Q: Will you (VenomXNL) make 'alternate versions' to support frameworks like ESX, vRP etc?
  A: NO I WILL NOT, I Do NOT use frameworks myself (I'm developing my OWN 100% 
     custom server from scratch with my own (non-released) 'framework'. And thus I have no
