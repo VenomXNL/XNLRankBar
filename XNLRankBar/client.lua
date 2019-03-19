@@ -245,6 +245,10 @@ exports('Exp_XNL_GetLevelFromXP', function(EXXPAmount)
 	return XNL_GetLevelFromXP(EXXPAmount)
 end)
 
+exports('Exp_XNL_GetCurrentPlayerLevel', function()
+	return tonumber(XNL_GetCurrentPlayerLevel())
+end)
+
 
 --===================================================================================
 -- Client Trigger Events (so it can PARTIALLY be used server  sided :) )
