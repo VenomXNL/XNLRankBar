@@ -154,7 +154,7 @@ XNL_UseRedBarWhenLosingXP = true	-- This sets if the bar should turn red when a 
 XNL_MaxPlayerLevel = 500 			-- Sets the maximum level (Maximum which can be used is 7999!)
 									-- This will also prevent the player from getting more XP than possible
 									-- IF you use my variable to set/read the player XP
-							 
+XNL_EnableZKeyForRankbar = true		-- This Enables/Disables (when you set it to false) the Rankbar showing up when the player presses Z on the keyboard							 
 							 
 --===================================================================================
 -- Variable(s) you should NOT be messing with! These are used by the script to make
@@ -199,6 +199,75 @@ end)
 
 
 --===================================================================================
+-- This thread will Enable the player to press Z to show the current XP/Rankbar
+-- IT IS NOT TESTED WITH CONTROLLERS! please check or implement controller
+-- combatability yourself since we don't use controllers and neither allow them
+--===================================================================================
+Citizen.CreateThread(function()
+	if not XNL_EnableZKeyForRankbar then return end
+	while true do
+	Wait(1)
+		if IsControlJustPressed(0, 20) then
+			CurLevel = XNL_GetLevelFromXP(XNL_CurrentPlayerXP)
+			CreateRankBar(XNL_GetXPFloorForLevel(CurLevel), XNL_GetXPCeilingForLevel(CurLevel), XNL_CurrentPlayerXP, XNL_CurrentPlayerXP, CurLevel, false)
+
+			-- ShowHudComponentThisFrame(3) -- Enable this line if you want to display the native player CASH
+			--ShowHudComponentThisFrame(4) -- Enable this line if you want to display the native player BANK amount
+			-- NOTE ON THE TWO ABOVE: Those are NOT implemented in this script! but just as 'extra info' for a 'complete hud'
+		end
+	end
+end)
+
+
+--===================================================================================
+-- Export Functions so they can more easily be called from external scripts :)
+-- as suggested by one of the Elements (oganesson):
+-- https://forum.fivem.net/t/release-xnlrankbar-fully-working-original-gta-rankbar-xp-bar-natively-with-original-gta-levels/318839/12?u=venomxnl
+--===================================================================================
+exports('Exp_XNL_SetInitialXPLevels', function(EXCurrentXP, EXShowRankBar, EXShowRankBarAnimating)
+	XNL_SetInitialXPLevels(EXCurrentXP, EXShowRankBar, EXShowRankBarAnimating)
+	print("TEST")
+end)
+
+exports('Exp_XNL_AddPlayerXP', function(EXXPAmount)
+	XNL_AddPlayerXP(EXXPAmount)
+end)
+
+exports('Exp_XNL_RemovePlayerXP', function(EXXPAmount)
+	XNL_RemovePlayerXP(EXXPAmount)
+end)
+
+exports('Exp_XNL_GetCurrentPlayerXP', function()
+	return tonumber(XNL_GetCurrentPlayerXP())
+end)
+
+exports('Exp_XNL_GetLevelFromXP', function(EXXPAmount)
+	return XNL_GetLevelFromXP(EXXPAmount)
+end)
+
+
+--===================================================================================
+-- Client Trigger Events (so it can PARTIALLY be used server  sided :) )
+-- as requested by createdbyeric:
+-- https://forum.fivem.net/t/release-xnlrankbar-fully-working-original-gta-rankbar-xp-bar-natively-with-original-gta-levels/318839/15?u=venomxnl
+--===================================================================================
+RegisterNetEvent("XNL_NET:XNL_SetInitialXPLevels")
+AddEventHandler("XNL_NET:XNL_SetInitialXPLevels", function(NetCurrentXP, NetShowRankBar, NetShowRankBarAnimating)
+	XNL_SetInitialXPLevels(NetCurrentXP, NetShowRankBar, NetShowRankBarAnimating)
+end)
+
+RegisterNetEvent("XNL_NET:AddPlayerXP")
+AddEventHandler("XNL_NET:AddPlayerXP", function(NetXPAmmount)
+	XNL_AddPlayerXP(NetXPAmmount)
+end)
+
+RegisterNetEvent("XNL_NET:RemovePlayerXP")
+AddEventHandler("XNL_NET:RemovePlayerXP", function(NetXPAmmount)
+	XNL_RemovePlayerXP(NetXPAmmount)
+end)
+
+
+--===================================================================================
 -- These are functions you could/can use to make this script 'ready to use' and to
 -- (make it ) interface with your own scripts, game modes etc :)
 --===================================================================================
@@ -239,7 +308,6 @@ function XNL_GetCurrentPlayerLevel()
 	return XNL_GetLevelFromXP(XNL_CurrentPlayerXP)
 end
 
-
 function XNL_OnPlayerLevelUp()
 	-- This function is called when the played has leveled up while getting the XP
 	-- On my server I use this 'XNL Event' to make an 'extra save' to the database
@@ -269,7 +337,6 @@ function XNL_OnPlayerLevelsLost()
 	-- NOTE: These are just SUGGESTIONS/IDEA'S for YOU to implement, I have NOT included
 	-- these 'features' in this script
 end
-
 
 function XNL_AddPlayerXP(XPAmount)
 	--======================================================================================
