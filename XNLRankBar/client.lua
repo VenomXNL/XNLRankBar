@@ -239,6 +239,7 @@ function XNL_GetCurrentPlayerLevel()
 	return XNL_GetLevelFromXP(XNL_CurrentPlayerXP)
 end
 
+
 function XNL_OnPlayerLevelUp()
 	-- This function is called when the played has leveled up while getting the XP
 	-- On my server I use this 'XNL Event' to make an 'extra save' to the database
@@ -268,6 +269,7 @@ function XNL_OnPlayerLevelsLost()
 	-- NOTE: These are just SUGGESTIONS/IDEA'S for YOU to implement, I have NOT included
 	-- these 'features' in this script
 end
+
 
 function XNL_AddPlayerXP(XPAmount)
 	--======================================================================================
@@ -420,9 +422,6 @@ function XNL_RemovePlayerXP(XPAmount)
 	end
 end
 
-function XNL_GetLevelFromXP(intXPAmount)
-
-
 --======================================================================================
 --======================================================================================
 -- Basicaly if you're a 'standard user/implementor' of my script, you would not need
@@ -562,6 +561,8 @@ function XNL_GetXPCeilingForLevel(intLevelNr)
 		return 0 -- YES this MIGHT cause an XP bar which will not show xp drawing for a moment IF there is an error in the script, but it will prevent crashing!
 	end
 end
+
+function XNL_GetLevelFromXP(intXPAmount)
 	--======================================================================================
 	-- This function 'converts' the XP amount you 'put in' to the level belongs to/in
 	-- NOTE: This function does NOT have an 'upper limit' or 'error handling' on entering
