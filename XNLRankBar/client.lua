@@ -249,6 +249,12 @@ exports('Exp_XNL_GetCurrentPlayerLevel', function()
 	return tonumber(XNL_GetCurrentPlayerLevel())
 end)
 
+exports('Exp_XNL_GetXPFloorForLevel', function(EXXPAmount)
+	return tonumber(XNL_GetXPFloorForLevel(EXXPAmount))
+end)
+exports('Exp_XNL_GetXPCeilingForLevel', function(EXXPAmount)
+	return tonumber( XNL_GetXPCeilingForLevel(EXXPAmount))
+end)
 
 --===================================================================================
 -- Client Trigger Events (so it can PARTIALLY be used server  sided :) )
