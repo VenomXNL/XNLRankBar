@@ -249,11 +249,11 @@ exports('Exp_XNL_GetCurrentPlayerLevel', function()
 	return tonumber(XNL_GetCurrentPlayerLevel())
 end)
 
-exports('Exp_XNL_GetXPFloorForLevel', function(EXXPAmount)
-	return tonumber(XNL_GetXPFloorForLevel(EXXPAmount))
+exports('Exp_XNL_GetXPFloorForLevel', function(IntLvl)
+	return tonumber(XNL_GetXPFloorForLevel(IntLvl))
 end)
-exports('Exp_XNL_GetXPCeilingForLevel', function(EXXPAmount)
-	return tonumber( XNL_GetXPCeilingForLevel(EXXPAmount))
+exports('Exp_XNL_GetXPCeilingForLevel', function(IntLvl)
+	return tonumber(XNL_GetXPCeilingForLevel(IntLvl))
 end)
 
 --===================================================================================
