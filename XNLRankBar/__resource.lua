@@ -12,6 +12,8 @@ export 'Exp_XNL_GetCurrentPlayerXP'
 export 'Exp_XNL_GetLevelFromXP'
 export 'Exp_XNL_GetCurrentPlayer'
 export 'Exp_XNL_GetCurrentPlayerLevel'
+export 'Exp_XNL_GetXPCeilingForLevel'
+export 'Exp_XNL_GetXPFloorForLevel'
 
 
 
