@@ -1,6 +1,6 @@
 --[[
 =====================================================================
-                   Script License and Usage
+                 Script License and Usage V1.2
 =====================================================================
 
 This script has been fully written from scratch by VenomXNL
