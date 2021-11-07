@@ -1,6 +1,6 @@
-====================================================================================================
+------------------------------------------------
 Getting quite 'annoyed' by now, by people which keep adding "issues" to "ask" for functions they want in THEIR script, READ THE DOCUMENTATION before even considering to openining an issue! This Resource DOES NOT save, manage or limit level perks etc! It doesn't even store levels/xp! It's "JUST" an graphical interface.
-====================================================================================================
+------------------------------------------------
 
 
 Basic Information:
